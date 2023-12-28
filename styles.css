@@ -1,0 +1,182 @@
+body {
+    font-family: 'poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg);
+    color: #fff;
+}
+
+:root {
+    --navbg: #06112bff;
+    --text_hover: #81edf7ff;
+    --bg: #081724ff;
+    --body_text: #4deefaff;
+    --tutbg: rgb(14, 36, 54);
+    --tut_effect: #0053b8f7;
+}
+
+nav {
+    background-color: var(--navbg);
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+nav .logo {
+    color: #fff;
+    font-weight: 650;
+    cursor: pointer;
+    font-size: 26px;
+    padding: 20px 0px 20px 5vw;
+    text-decoration: none;
+}
+
+nav .logo span {
+    color: var(--text_hover);
+}
+
+nav .items a {
+    text-decoration: none;
+    padding: 12px;
+    color: #fff;
+    font-size: 18px;
+}
+
+nav .items a:hover{
+    color: var(--text_hover);
+    font-size: 19px;
+}
+
+nav .items {
+    margin: auto 0;
+    margin-left: auto;
+    padding-right: 30px;
+}
+
+nav .contactb {
+    background-color: transparent;
+    border: 1px solid var(--text_hover);
+    border-radius: 7px;
+    font-size: 18px;
+    text-decoration: none;
+    margin: 12px 20px 12px -15px;
+    color: #fff;
+    height: 34px;
+    width: 100px;
+    text-align: center;
+    font-weight: 500;
+    line-height: 1.85;
+}
+
+nav .contactb:hover {
+    color: var(--navbg);
+    background-color: var(--text_hover);
+    
+}
+
+.infodiv {
+    width: 700px;
+    padding: 70px 8% 0;
+}
+
+.infodiv .main_title {
+    font-size: 56px;
+    margin-bottom: 0px;
+}
+
+.infodiv .subtitle {
+    margin-top: -6px;
+    margin-bottom: 0px;
+}
+
+.infodiv .subtitle span {
+    color: var(--body_text);
+}
+
+.infodiv .info {
+    font-size: 18px;
+    margin-top: 10px;
+    width: 680px;
+}
+
+.infodiv .icons a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 33px;
+    height: 33px;
+    background: transparent;
+    border: 1.5px solid var(--body_text);
+    border-radius: 50%;
+    font-size: 20px;
+    color: var(--body_text);
+    text-decoration: none;
+    margin: 0 15px 30px 0;
+}
+
+.infodiv .icons a:hover {
+    background-color: var(--body_text);
+    color: var(--bg);
+    box-shadow: 0 0 10px var(--body_text);
+}
+
+.infodiv .btn {
+    display: inline-block;
+    padding: 12px 28px;
+    background-color: var(--body_text);
+    border-radius: 40px;
+    font-size: 16px;
+    color: var(--bg);
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.infodiv .btn:hover {
+    box-shadow: 0 0 5px cyan,
+    0 0 25px cyan,
+    0 0 50px cyan,
+    0 0 100px cyan,
+    0 0 200px cyan;
+}
+
+.tut {
+    background-color: var(--tutbg);
+    box-shadow: 1px 1px 10px var(--tut_effect);
+    border-radius: 8px;
+    margin: 70px 8% 0;
+    padding: 30px 35px;
+}
+
+.contact {
+    text-align: center;
+}
+
+.contact h2 {
+    margin: 150px 3rem 0px 3rem;
+
+
+}
+
+.contact form {
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contact form .input-box {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact form .input-box input,
+.contact form textarea {
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    background: var(--second-bg-color);
+    border-radius: .8rem;
+    margin: 7rem 0;
+}
