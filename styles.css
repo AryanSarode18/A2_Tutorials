@@ -1,9 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
 body {
-    font-family: 'poppins', sans-serif;
     margin: 0;
     padding: 0;
     background-color: var(--bg);
     color: #fff;
+    scroll-padding-top: 80px;
+    font-family: 'Poppins', sans-serif;
+    justify-content: center;
+    align-items: center;
 }
 
 :root {
@@ -20,6 +25,8 @@ nav {
     display: flex;
     width: 100%;
     align-items: center;
+    position: sticky;
+    top: 0;
 }
 
 nav .logo {
@@ -42,7 +49,7 @@ nav .items a {
     font-size: 18px;
 }
 
-nav .items a:hover{
+nav .items a:hover {
     color: var(--text_hover);
     font-size: 19px;
 }
@@ -71,22 +78,23 @@ nav .contactb {
 nav .contactb:hover {
     color: var(--navbg);
     background-color: var(--text_hover);
-    
+
 }
 
 .infodiv {
-    width: 700px;
-    padding: 70px 8% 0;
+    width: 900px;
+    padding: 40px 8% 0;
 }
 
 .infodiv .main_title {
-    font-size: 56px;
+    font-size: 60px;
     margin-bottom: 0px;
 }
 
 .infodiv .subtitle {
     margin-top: -6px;
     margin-bottom: 0px;
+    font-size: 25px;
 }
 
 .infodiv .subtitle span {
@@ -134,10 +142,10 @@ nav .contactb:hover {
 
 .infodiv .btn:hover {
     box-shadow: 0 0 5px cyan,
-    0 0 25px cyan,
-    0 0 50px cyan,
-    0 0 100px cyan,
-    0 0 200px cyan;
+        0 0 25px cyan,
+        0 0 50px cyan,
+        0 0 100px cyan,
+        0 0 200px cyan;
 }
 
 .tut {
@@ -148,35 +156,77 @@ nav .contactb:hover {
     padding: 30px 35px;
 }
 
-.contact {
-    text-align: center;
+.section {
+    padding-top: 30px;
 }
 
-.contact h2 {
-    margin: 150px 3rem 0px 3rem;
-
-
+footer {
+    margin: 0px auto;
+    max-width: 960px;
+    padding-top: 60px;
 }
 
 .contact form {
-    max-width: 70rem;
-    margin: 1rem auto;
+    margin: auto;
+}
+
+.contact h2 {
+    font-size: 40px;
     text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: 10px;
+}
+
+.contact form {
+    width: 600px;
+    text-align: center;
+}
+
+.input-box .input-field {
+    width: 48.5%;
 }
 
 .contact form .input-box {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-.contact form .input-box input,
-.contact form textarea {
-    width: 100%;
-    padding: 1.5rem;
-    font-size: 1.6rem;
-    color: var(--text-color);
-    background: var(--second-bg-color);
-    border-radius: .8rem;
-    margin: 7rem 0;
+.field .item {
+    width: calc(100% - 42px);
+    padding: 18px;
+    background: transparent;
+    border: 2px solid var(--body_text);
+    outline: none;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #ededed;
+    margin: 12px 0;
+}
+
+.field .item::placeholder {
+    color: rgba(255, 255, 255, .3);
+}
+
+form .textarea-field .item {
+    resize: none;
+}
+
+form button {
+    padding: 12px 32px;
+    background: transparent;
+    border: 2px solid var(--body_text);
+    outline: none;
+    border-radius: 6px;
+    box-shadow: none;
+    font-size: 16px;
+    color: var(--body_text);
+    letter-spacing: 1px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+form button:hover {
+    box-shadow: 0 0 10px var(--body_text);
+    background-color: var(--body_text);
+    color: var(--bg);
 }
